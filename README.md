@@ -21,8 +21,8 @@ To host a static HTML website using IIS (Internet Information Services) on a Win
 - Launched a Windows Server 2019 EC2 instance using AWS Free Tier.
 - Configured RDP and HTTP access in the security group.
 
-![Enable HTTP and RDP](screenshot/1-enable-http-rdp-IIS.jpg)  
-![Launch EC2](screenshot/2-Launch-EC2-Windows.jpg)
+![Enable HTTP and RDP](Screenshots/1-enable-http-rdp-IIS.jpg)  
+![Launch EC2](Screenshots/2-Launch-EC2-Windows.jpg)
 
 ---
 
@@ -30,8 +30,8 @@ To host a static HTML website using IIS (Internet Information Services) on a Win
 - Connected to the EC2 instance using Remote Desktop.
 - Verified access and server readiness.
 
-![RDP Login](screenshot/3-rdp-login-windows.jpg)  
-![Windows Server Open](screenshot/4-windows-server-open,login.jpg)
+![RDP Login](Screenshots/3-rdp-login-windows.jpg)  
+![Windows Server Open](Screenshots/4-windows-server-open,login.jpg)
 
 ---
 
@@ -39,7 +39,7 @@ To host a static HTML website using IIS (Internet Information Services) on a Win
 - Used Server Manager > Add Roles and Features to install IIS.
 - Confirmed setup by viewing IIS welcome page.
 
-![IIS Installation Process](screenshot/5-install-iis-windows.jpg)
+![IIS Installation Process](Screenshots/5-install-iis-windows.jpg)
 
 ---
 
@@ -47,8 +47,8 @@ To host a static HTML website using IIS (Internet Information Services) on a Win
 - Replaced the default index.html file in C:\inetpub\wwwroot with custom HTML.
 - Viewed the hosted site inside the server browser.
 
-![Deploy Website Files](screenshot/7-deploy-index-wwwroot.png.jpg)  
-![Test Local IIS Page](screenshot/6-test-iis-page-success.jpg)
+![Deploy Website Files](Screenshots/7-deploy-index-wwwroot.png.jpg)  
+![Test Local IIS Page](Screenshots/6-test-iis-page-success.jpg)
 
 ---
 
@@ -58,8 +58,8 @@ To host a static HTML website using IIS (Internet Information Services) on a Win
 
 > ℹ️ Since the Elastic IP was attached to a running instance, there was no additional charge.
 
-![Attach Elastic IP](screenshot/8-attach-elastic-ip.jpg)  
-![Open Site via Elastic IP](screenshot/9-open-site-Elastic-ip.jpg)
+![Attach Elastic IP](Screenshots/8-attach-elastic-ip.jpg)  
+![Open Site via Elastic IP](Screenshots/9-open-site-Elastic-ip.jpg)
 
 ---
 
@@ -67,7 +67,7 @@ To host a static HTML website using IIS (Internet Information Services) on a Win
 - Took an EBS snapshot of the volume to preserve the IIS + website setup.
 - Deleted the original volume afterward to stop storage charges.
 
-![Snapshot Created](screenshot/10-Snapshot-Created.jpg)
+![Snapshot Created](Screenshot/10-Snapshot-Created.jpg)
 
 > 💡 I chose snapshot instead of detaching the volume because even if we detach the volume, AWS still charges full EBS price. But snapshot stores only the used data and costs less. I also didn’t want to lose my IIS setup and website files — so snapshot was the safest and cheapest backup for me.
 
