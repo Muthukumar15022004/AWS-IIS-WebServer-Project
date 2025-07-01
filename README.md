@@ -67,7 +67,7 @@ To host a static HTML website using IIS (Internet Information Services) on a Win
 - Took an EBS snapshot of the volume to preserve the IIS + website setup.
 - Deleted the original volume afterward to stop storage charges.
 
-![Snapshot Created](Screenshot/10-Snapshot-Created.jpg)
+![Snapshot Created](Screenshots/10-Snapshot-Created.jpg)
 
 > 💡 I chose snapshot instead of detaching the volume because even if we detach the volume, AWS still charges full EBS price. But snapshot stores only the used data and costs less. I also didn’t want to lose my IIS setup and website files — so snapshot was the safest and cheapest backup for me.
 
